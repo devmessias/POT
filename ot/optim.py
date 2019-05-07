@@ -184,8 +184,8 @@ def cg(a, b, M, reg, f, df, G0=None, numItermax=200,
         # test convergence
         if it >= numItermax:
             loop = 0
-
-        delta_fval = (f_val - old_fval) / abs(f_val)
+        
+        delta_fval = (f_val - old_fval) 
         if abs(delta_fval) < stopThr:
             loop = 0
 
